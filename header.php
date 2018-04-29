@@ -126,27 +126,6 @@ $rss = get_option('exploreveg-rss');
                              echo " id='$logo-logo' alt='$logo_alts[$logo] logo'>";
                              ?></a>
           </div>
-          <div id="name-and-tagline" class="col-sm-<?php echo 12- $logo_width ?> col-xs-12">
-            <h1>
-              <a href="/"><?php
-                             $blog_name = get_bloginfo('name');
-                             if ( strcmp( $blog_name, 'CAA Test' ) == 0 ) {
-                                 echo 'Compassionate Action for Animals';
-                             }
-                             else {
-                                 echo $blog_name;
-                             } ?></a>
-            </h1>
-            <h2 id="tagline">
-              <?php bloginfo( 'description' ); ?>
-            </h2>
-<?php
-    $sub_tagline = get_option('exploreveg-sub-tagline');
-    if ($sub_tagline) {
-        echo '<h3 id="sub-tagline">' . $sub_tagline . '</h3>';
-    }
-?>
-          </div>
         </div>
         <div class="row">
           <nav class="navbar navbar-inverse navbar-default" id="global-nav" role="navigation">
