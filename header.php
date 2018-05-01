@@ -115,17 +115,16 @@ $rss = get_option('exploreveg-rss');
         </div>
         <div class="row">
 
-          <div class="col-sm-<?php echo $logo_width ?> col-xs-12">
-            <a href="/"><img <?php
+
+<img <?php
                              echo 'src="';
                              echo esc_url(get_stylesheet_directory_uri());
 
                              echo  '/img/' . $logo . '-logo.png';
                              echo '" ';
 
-                             echo " id='$logo-logo' alt='$logo_alts[$logo] logo'>";
-                             ?></a>
-          </div>
+                             echo "id='$logo-logo' alt='$logo_alts[$logo] logo'>";
+                             ?>
         </div>
         <div class="row">
           <nav class="navbar navbar-inverse navbar-default" id="global-nav" role="navigation">
