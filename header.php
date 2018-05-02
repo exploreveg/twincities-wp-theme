@@ -120,7 +120,7 @@ $rss = get_option('exploreveg-rss');
                              echo 'src="';
                              echo esc_url(get_stylesheet_directory_uri());
 
-                             echo  '/img/' . $logo . '-logo.jpg';
+                             echo  '/img/' . $logo . '-logo.png';
                              echo '" ';
 
                              echo "id='$logo-logo' alt='$logo_alts[$logo] logo'>";
